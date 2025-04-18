@@ -1,9 +1,9 @@
 # LMP-data-pipeline-SPP
-**Project Overview:**  
+### **Project Overview:**  
 This project aims to create a data pipeline that fetches LMP data from the SPP website, transforms it into a time-series format, merges it with geographical coordinates and solar output, and then generates a summary statistics table (CSV format) to provide insights for solar development. With geographical coordinates included, the summary table can be uploaded to an ArcGIS Online dashboard for visualization.
 
 ### **Python Scripts for Database Creation and Maintenance**  
-Five Python scripts are used to create and maintain a database with any relational database service (AWS Cloud is used here):
+Five Python scripts are used to create and maintain a database with any relational database service (AWS Cloud is used here). Please refer to the **"Database Management Flowchart.png"** for the first three scripts. 
 
 1. **"[AmazonAWS] Data Extraction & Connection with Relational Database.ipynb"**  
    - This Jupyter Notebook extracts all 2024 data from the SPP URL (covering 1/1/2024 6:00 to 1/1/2025 5:00), converts it to time-series format, and uploads it as `raw_lmp` to the database.  
